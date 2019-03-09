@@ -44,7 +44,7 @@
 - name: upload custom web page from template
   win_template:
     src: templates/index.j2
-    dest: '{{iis_site_path}}'\iisstart.htm    
+    dest: '{{iis_site_path}}\iisstart.htm'
 
 - name: configure site
   win_iis_website:
