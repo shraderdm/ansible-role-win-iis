@@ -1,6 +1,6 @@
 ---
 
-- name: TODO - test iis role
+- name: Windows Web Server Configuration (demo use only)
   hosts: windows
   roles:
     - role: cchurch.win-iis
