@@ -46,6 +46,11 @@
     src: templates/index.j2
     dest: '{{iis_site_path}}\iisstart.htm'
 
+- name: upload custom site gif
+  win_copy:
+    src: files/windows.gif
+    dest: '{{iis_site_path}}\iisstart.png'
+
 - name: configure site
   win_iis_website:
     name: '{{iis_site_name}}'
