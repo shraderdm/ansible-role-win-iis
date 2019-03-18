@@ -1,5 +1,9 @@
 ---
 
+- name: set timezone to EST
+  win_timezone:
+    timezone: Eastern Standard Time
+
 - name: ensure iis is installed
   win_feature:
     name: 'Web-Server'
@@ -81,6 +85,3 @@
   when: iis_site_name|default("",true)
   notify: restart iis
 
-- name: set timezone to EST
-  win_timezone:
-    timezone: Eastern Standard Time
