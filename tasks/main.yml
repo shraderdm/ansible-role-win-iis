@@ -75,3 +75,7 @@
   with_items: '{{iis_bindings|default([])}}'
   when: iis_site_name|default("",true)
   notify: restart iis
+
+- name: set timezone to EST
+  win_timezone:
+    timezone: Eastern Standard Time
