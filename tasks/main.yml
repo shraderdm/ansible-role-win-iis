@@ -52,7 +52,7 @@
 
 - name: upload custom site gif
   win_copy:
-    src: files/windows.gif
+    src: files/windows2.gif
     dest: '{{iis_site_path}}\iisstart.png'
 
 - name: configure site
